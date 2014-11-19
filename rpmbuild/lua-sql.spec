@@ -15,7 +15,7 @@ URL:            http://www.keplerproject.org/luasql/
 Source0:        https://github.com/keplerproject/luasql/archive/%{commit}/%{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-BuildRequires:  lua >= %{luaver}, lua-devel >= %{luaver}
+BuildRequires:  lua52 >= %{luaver}, lua52-devel >= %{luaver}
 BuildRequires:  pkgconfig
 BuildRequires:  sqlite-devel >= 3.0
 BuildRequires:  mysql-devel
@@ -31,7 +31,7 @@ statements and it allows for retrieving results in a row-by-row cursor fashion.
 %package doc
 Summary:        Documentation for LuaSQL
 Group:          Documentation
-Requires:       lua >= %{luaver}
+Requires:       lua52 >= %{luaver}
 %description doc
 LuaSQL is a simple interface from Lua to a DBMS. This package contains the
 documentation for LuaSQL.
@@ -58,14 +58,14 @@ to MySQL databases.
 %package postgresql
 Summary:        PostgreSQL database connectivity for the Lua programming language
 Group:          Development/Libraries
-Requires:       lua >= %{luaver}
+Requires:       lua52 >= %{luaver}
 %description postgresql
 LuaSQL is a simple interface from Lua to a DBMS. This package provides access
 to PostgreSQL databases.
 
 
 %prep
-%setup -q -n luasql-%{version}
+%setup -q -n lua-sql-%{version}
 
 
 %build
