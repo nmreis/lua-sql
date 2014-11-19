@@ -12,7 +12,7 @@ Summary:        Database connectivity for the Lua programming language
 Group:          Development/Libraries
 License:        MIT
 URL:            http://www.keplerproject.org/luasql/
-Source0:        https://github.com/keplerproject/luasql/archive/%{commit}/%{name}-%{version}-%{shortcommit}.tar.gz
+Source0:        https://github.com/keplerproject/luasql/archive/%{commit}/%{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:  lua >= %{luaver}, lua-devel >= %{luaver}
