@@ -6,7 +6,7 @@
 
 Name:           lua-sql
 Version:        2.3.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Database connectivity for the Lua programming language
 
 Group:          Development/Libraries
@@ -65,7 +65,7 @@ to PostgreSQL databases.
 
 
 %prep
-%setup -q -n luasql-%{commit}
+%setup -q -n luasql-%{version}
 
 
 %build
@@ -110,6 +110,9 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Wed Nov 19 2014 Finesource Release Engineering <nreis@wavecom.pt> - 2.3.0
+- FSCloud Dependency Build
+
 * Sat Jun 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3.0-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
 
