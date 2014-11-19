@@ -40,7 +40,7 @@ documentation for LuaSQL.
 %package sqlite
 Summary:        SQLite database connectivity for the Lua programming language
 Group:          Development/Libraries
-Requires:       lua >= %{luaver}
+Requires:       lua52 >= %{luaver}
 %description sqlite
 LuaSQL is a simple interface from Lua to a DBMS. This package provides access
 to SQLite databases.
@@ -49,7 +49,7 @@ to SQLite databases.
 %package mysql
 Summary:        MySQL database connectivity for the Lua programming language
 Group:          Development/Libraries
-Requires:       lua >= %{luaver}
+Requires:       lua52 >= %{luaver}
 %description mysql
 LuaSQL is a simple interface from Lua to a DBMS. This package provides access
 to MySQL databases.
